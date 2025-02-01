@@ -1,4 +1,4 @@
-use std::{thread, time};
+use std::{io::{ self, Write }, thread, time};
 
 const HELL_WRLD_LEN: usize = 10;
 const CHARS: [char; 26] = ascii_uppercase();
@@ -13,7 +13,9 @@ fn main() {
 
         for i in 0..26{
             thread::sleep(time::Duration::from_millis(100));
-            println!("{}{}", string, CHARS[i]);
+            
+            print!("\r{}{}", string, CHARS[i]);
+            io::stdout().flush().unwrap();
             if CHARS[i] == HELL[x]{
                 string.push(CHARS[i]);
                 x += 1;
