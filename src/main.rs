@@ -9,14 +9,14 @@ fn main() {
     let mut string = String::new();
     let mut x: usize = 0;
 
-    loop{
+    loop {
 
-        for i in 0..26{
+        for i in 0..26 {
             thread::sleep(time::Duration::from_millis(100));
             
             print!("\r{}{}", string, CHARS[i]);
             io::stdout().flush().unwrap();
-            if CHARS[i] == HELL[x]{
+            if CHARS[i] == HELL[x] {
                 string.push(CHARS[i]);
                 x += 1;
                 break;
