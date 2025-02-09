@@ -1,7 +1,7 @@
 # HellWrld
 ![hellwrld2](https://github.com/user-attachments/assets/336cc941-6c69-4d8e-ac9b-3f1af30505ee)
 
-HellWrld is a small, useless program written in Rust that prints "HELLO WORLD". It does this in an interesting way by comparing the letters of the alphabet, creating a unique effect.
+**HellWrld** is a small, useless program written in Rust that prints ***"HELLO WORLD"***. It does this in an interesting way by comparing the letters of the alphabet, creating a unique effect.
 
 ## How to Run
 
