@@ -11,13 +11,13 @@ fn main() {
 
     loop {
 
-        for i in 0..26 {
+        for chr in &CHARS {
             thread::sleep(time::Duration::from_millis(100));
             
-            print!("\r{}{}", string, CHARS[i]);
+            print!("\r{}{}", string, chr);
             io::stdout().flush().unwrap();
-            if CHARS[i] == HELL[x] {
-                string.push(CHARS[i]);
+            if *chr == HELL[x] {
+                string.push(*chr);
                 x += 1;
                 break;
             }
